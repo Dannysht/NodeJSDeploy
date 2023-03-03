@@ -1,0 +1,22 @@
+{
+  "name": "time-difference",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express":"4.18.2"
+},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "time"
+  ],
+  "author": "Daniel Shterev",
+  "license": "MIT",
+  "engines": {
+    "node": "19.6.0"
+  }
+}
