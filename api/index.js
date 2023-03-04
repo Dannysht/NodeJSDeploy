@@ -1,4 +1,5 @@
 const express = require("express")
+const path = require("path")
 const app = express()
 
 app.use(express.static("public"))
@@ -6,7 +7,7 @@ app.use(express.json())
 
 app.get("/", (req, res) =>
 {
-    res.sendFile(__dirname + "/public/page/index.html")
+    res.sendFile("index.html", {root: path.join(__dirname, "..", "public/page")})
 })
 
 app.post("/", (req, res) =>
