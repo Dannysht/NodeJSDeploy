@@ -20,7 +20,7 @@ function calcDays(event)
         date:document.getElementById("inputDate").value
     }  
     console.log(date);
-    fetch("/", {
+    fetch("/api/", {
         method:"POST",
         headers:{
             "Content-Type": "application/json"

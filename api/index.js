@@ -5,12 +5,12 @@ const app = express()
 app.use(express.static("public"))
 app.use(express.json())
 
-app.get("/", (req, res) =>
+app.get("/api/", (req, res) =>
 {
     res.sendFile("index.html", {root: path.join(__dirname, "..", "public/index")})
 })
 
-app.post("/", (req, res) =>
+app.post("/api/", (req, res) =>
 {
     const dataReceived = req.body.date
     const dateReceived = new Date(dataReceived)
