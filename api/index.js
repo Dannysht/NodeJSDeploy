@@ -6,7 +6,7 @@ app.use(express.json())
 
 app.get("/", (req, res) =>
 {
-    res.sendFile(__dirname + "/public/page/index.html")
+    res.sendFile(__dirname - "/api" + "/public/page/index.html")
 })
 
 app.post("/", (req, res) =>
