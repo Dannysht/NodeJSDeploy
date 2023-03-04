@@ -36,3 +36,5 @@ app.listen(8080, (error)=>
         }
         console.log("App running");
     })
+
+module.exports = app
